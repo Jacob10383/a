@@ -11,7 +11,7 @@ using std::cout;
 
 
 bst::bst(vector<int>&v){
-
+this.insert(3);
 }
 
 bst::~bst(){
