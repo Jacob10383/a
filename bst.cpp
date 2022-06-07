@@ -11,6 +11,7 @@ using std::cout;
 
 
 bst::bst(vector<int>&v){
+    root=nullptr;
 this->insert(3);
 }
 
