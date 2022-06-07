@@ -72,6 +72,7 @@ bool bst::insert(int value, bstNode *n) {
 }
 
 
+
 void bst::deleteSubtree(int key)
  {
      if(getNodeFor(key,root))
@@ -141,20 +142,14 @@ void bst::outputInOrder(bstNode *n, vector<int> &output) const
     outputInOrder(n->right, output);
 }
 
-typename bst::bstNode *bst::getNodeFor(int value, bstNode *n) const
-{
-    while (n != nullptr)
-    {
-        if (value == n->info)
-        {
-            return n;
+typename bst::bstNode* bst::getNodeFor(int value, bstNode* n) const{
+    while (n != nullptr) {
+        if (value == n->info) {
+            return n; 
         }
-        else if (value < n->info)
-        {
+        else if (value < n->info) {
             return getNodeFor(value, n->left);
-        }
-        else
-        {
+        } else {
             return getNodeFor(value, n->right);
         }
     }
