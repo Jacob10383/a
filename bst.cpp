@@ -10,10 +10,10 @@ using std::cout;
 
 bst::bst(vector<int> &v)
 {
-    for (int i = 0; i < v.size(); i++)
-    {
+    //for (int i = 0; i < v.size(); i++)
+    
         insert(64);
-    }
+    
 }
 
 bst::~bst()
