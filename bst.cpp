@@ -12,7 +12,7 @@ bst::bst(vector<int> &v)
 {
     for (int i = 0; i < v.size(); i++)
     {
-        insert(v.at(i));
+        insert(64);
     }
 }
 
